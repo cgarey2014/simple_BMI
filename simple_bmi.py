@@ -14,7 +14,7 @@
 height = input('What is your height? ')
 weight = input('What is your weight? ')
 
-#Convert heigh from inches to meters
+# Convert height from inches to meters
 height_conv = float(height) * 0.0254
 
 # Convert weight from lbs to kgs
@@ -22,6 +22,6 @@ weight_conv = float(weight) / 2.2046
 
 # Calculate BMI
 bmi = float(weight_conv / height_conv**2)
-
+bmi = int(bmi)
 # Return results to user
-print(int(bmi))
+print('Your BMI is: ' + str(bmi))
